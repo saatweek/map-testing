@@ -9,7 +9,9 @@ export async function GET(
   context: { params: { year: string } },
 ) {
   // const year = params.year;
-  const { year } = context.params;
+  // const { year } = context.params;
+  const { params } = context;
+  const year = params.year;
 
   try {
     const filePath = path.join(
