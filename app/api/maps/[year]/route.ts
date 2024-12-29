@@ -5,13 +5,9 @@ import path from "path";
 
 export async function GET(
   request: Request,
-  // { params }: { params: { year: string } },
-  // context: { params: { year: string } },
-  context: { params: Record<string, string> },
+  { params }: { params: { year: string } },
 ) {
-  // const year = params.year;
-  // const { year } = context.params;
-  const year = context.params.year;
+  const year = params.year;
 
   try {
     const filePath = path.join(

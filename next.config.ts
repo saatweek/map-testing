@@ -2,7 +2,7 @@
 
 const nextConfig = {
   /* config options here */
-  basePath: "/map-testing",
+  // basePath: "/map-testing",
   // output: "export", // <=== enables static exports
   // reactStrictMode: true,
   // assetPrefix: "/map-testing",
